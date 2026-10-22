@@ -1,0 +1,9 @@
+{
+  "ads": [
+    {"platform": "all", "text": "VDL Pro : téléchargements illimités et 4K, dès 9,99 $ par an.", "url": "https://vdl.jakdev.space/#tarifs", "action": "Voir les offres"},
+    {"platform": "all", "text": "Mobile Money accepté : VDL dès 300 FCFA par mois.", "url": "https://vdl.jakdev.space/#tarifs", "action": "Voir les offres"},
+    {"platform": "windows", "text": "VDL Pro à vie : 19,99 $, une seule fois. Mises à jour incluses.", "url": "https://vdl.jakdev.space/#tarifs", "action": "Voir les offres"},
+    {"platform": "android", "text": "Retirez les publicités : VDL sans pubs dès 4,99 $ par an.", "url": "https://vdl.jakdev.space/#tarifs", "action": "Voir les offres"},
+    {"platform": "android", "text": "VDL existe aussi sur Windows : téléchargez sur PC et envoyez au téléphone.", "url": "https://vdl.jakdev.space", "action": "Découvrir"}
+  ]
+}

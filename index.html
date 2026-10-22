@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VDL — Gestionnaire de téléchargements</title>
+  <meta name="description" content="VDL télécharge vidéos, musiques et fichiers depuis plus de 1 800 sites. Gratuit, pour Windows et Android.">
+  <meta property="og:title" content="VDL — Gestionnaire de téléchargements">
+  <meta property="og:description" content="Vidéos, musiques et fichiers : collez un lien, choisissez la qualité, c'est téléchargé.">
+  <meta property="og:image" content="https://vdl.jakdev.space/assets/icon.png">
+  <meta property="og:url" content="https://vdl.jakdev.space/">
+  <link rel="canonical" href="https://vdl.jakdev.space/">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#"><img src="assets/icon.png" alt="">VDL</a>
+      <nav>
+        <a href="#android">Android</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#installation">Installation</a>
+        <a href="#nouveautes">Nouveautés</a>
+        <a href="#faq">Questions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <a class="new-badge" href="#nouveautes"><span>Nouveau</span> Super Send : partage ultra rapide sans Internet →</a>
+      <h1>Téléchargez vos vidéos,<br>simplement.</h1>
+      <p class="lead">Collez un lien, choisissez la qualité ou le MP3, c'est fait.
+        Plus de 1 800 sites compatibles, téléchargements accélérés. Gratuit pour commencer.</p>
+      <a id="main-dl" class="btn" href="#telecharger">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
+        <span id="main-label">Télécharger VDL</span>
+      </a>
+      <div class="meta" id="main-meta">Version gratuite · sans compte · <a href="#tarifs">VDL Pro dès 9,99 $/an</a></div>
+      <div class="others" id="others"></div>
+    </div>
+
+    <div class="wrap" id="telecharger">
+      <div class="platforms">
+        <div class="platform" data-os="windows">
+          <h3>Windows</h3>
+          <p>Windows 10 et 11 (64 bits). Bulle flottante et extension navigateur.</p>
+          <a class="dl" data-asset="setup" href="#">Télécharger l'installeur</a>
+          <a class="dl" data-asset="portable" href="#" style="font-weight:400;font-size:14px">Version portable (.zip)</a>
+        </div>
+        <div class="platform" data-os="android">
+          <h3>Android</h3>
+          <p>Android 7 et plus. Navigateur intégré protégé qui détecte les vidéos.</p>
+          <a class="dl" data-asset="apk" href="#">Télécharger l'APK</a>
+          <a class="dl" data-asset="apk_universal" href="#" style="font-weight:400;font-size:14px">Version universelle (anciens téléphones)</a>
+        </div>
+        <div class="platform" data-os="mac">
+          <h3>macOS</h3>
+          <p>Mac Intel et Apple Silicon.</p>
+          <span class="soon">Bientôt disponible</span>
+        </div>
+        <div class="platform" data-os="ios">
+          <h3>iPhone / iPad</h3>
+          <p>Apple n'autorise pas l'installation d'apps hors App Store.</p>
+          <span class="soon">Pas encore disponible</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="android">
+      <div class="wrap">
+        <span class="kicker">Application Android · nouveau</span>
+        <h2>Téléchargez depuis vos applis, sans les quitter</h2>
+        <p class="sub">Une bulle VDL flotte au-dessus de Facebook, TikTok, Instagram ou Telegram. Copiez le lien d'une vidéo,
+          touchez la bulle : c'est téléchargé. Et le navigateur intégré repère les vidéos de n'importe quel site, en vous protégeant.</p>
+
+        <div class="android-points">
+          <div class="point">
+            <h3>Bulle flottante</h3>
+            <p>Par-dessus n'importe quelle app : « Copier le lien », touchez la bulle, choisissez la qualité. Vous restez dans l'app.</p>
+          </div>
+          <div class="point">
+            <h3>Statuts WhatsApp</h3>
+            <p>Les statuts que vous avez regardés (vidéos et photos) s'enregistrent d'un geste. WhatsApp Business aussi.</p>
+          </div>
+          <div class="point">
+            <h3>Telegram et partage</h3>
+            <p>Liens de canaux publics via la bulle ; pour une vidéo de discussion : Partager → VDL, elle est enregistrée.</p>
+          </div>
+          <div class="point">
+            <h3>Détection automatique</h3>
+            <p>Vidéos classiques et flux en streaming (HLS, DASH) sont repérés pendant la lecture, sur la plupart des sites.</p>
+          </div>
+          <div class="point">
+            <h3>Protection façon Brave</h3>
+            <p>Plus de 70 000 domaines de publicité, de pistage et de logiciels malveillants bloqués. Liste mise à jour chaque semaine.</p>
+          </div>
+          <div class="point">
+            <h3>Fini les pièges</h3>
+            <p>Pop-ups et redirections automatiques vers d'autres sites bloquées. Alerte avant les sites d'hameçonnage connus.</p>
+          </div>
+          <div class="point">
+            <h3>Vous gardez la main</h3>
+            <p>Le bouclier de la barre d'adresse montre ce qui a été bloqué, et se désactive d'un geste pour un site qui s'affiche mal.</p>
+          </div>
+        </div>
+
+        <div class="phones">
+          <figure class="phone">
+            <img src="assets/screens/navigateur.png" alt="Navigateur de VDL : vidéo en cours, bouton Télécharger cette vidéo et pop-up bloquée" loading="lazy" width="450" height="1000">
+            <figcaption>La vidéo démarre : le bouton apparaît, la pop-up est bloquée.</figcaption>
+          </figure>
+          <figure class="phone">
+            <img src="assets/screens/qualite.png" alt="Choix du format MP4 ou MP3 et de la qualité jusqu'en 4K" loading="lazy" width="450" height="1000">
+            <figcaption>Vidéo ou MP3, qualité jusqu'en 4K.</figcaption>
+          </figure>
+          <figure class="phone">
+            <img src="assets/screens/protection.png" alt="Bouclier : pubs, pop-ups et redirections bloquées sur la page" loading="lazy" width="450" height="1000">
+            <figcaption>Le bouclier : tout ce qui a été bloqué sur la page.</figcaption>
+          </figure>
+          <figure class="phone">
+            <img src="assets/screens/telechargements.png" alt="Liste des téléchargements avec progression, vitesse et temps restant" loading="lazy" width="450" height="1000">
+            <figcaption>Vos téléchargements, même écran éteint.</figcaption>
+          </figure>
+          <figure class="phone">
+            <img src="assets/screens/accueil.png" alt="Accueil de VDL : coller un lien, lien copié détecté, sites populaires" loading="lazy" width="450" height="1000">
+            <figcaption>Ou collez simplement un lien.</figcaption>
+          </figure>
+        </div>
+        <p class="center"><a class="btn" data-asset="apk" href="#">Télécharger pour Android</a></p>
+      </div>
+    </section>
+
+    <section id="fonctionnalites">
+      <div class="wrap">
+        <h2>Tout ce qu'il faut, rien de plus</h2>
+        <p class="sub">Inspiré des gestionnaires de téléchargements classiques, pensé pour la vidéo.</p>
+        <div class="features">
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg></div>
+            <h3>4K, regarder tout de suite</h3>
+            <p>Jusqu'en 4K. Regardez la vidéo pendant qu'elle se télécharge ; le lecteur reprend où vous vous étiez arrêté.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+            <h3>MP3, GIF, sonneries</h3>
+            <p>Extrayez le son, créez un GIF ou une sonnerie, compressez pour WhatsApp ou découpez pour vos statuts.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+            <h3>Accéléré, du PC au téléphone</h3>
+            <p>Jusqu'à 32 connexions par fichier, reprise après coupure. Envoyez une vidéo du PC au téléphone en un clic.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+            <h3>Bouton sur les vidéos</h3>
+            <p>Lancez une vidéo : « Télécharger cette vidéo » apparaît. Extension sur ordinateur, navigateur intégré sur Android.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Navigation protégée</h3>
+            <p>Sur Android, pubs, traqueurs, pop-ups et redirections piégées sont bloqués, et les sites dangereux signalés.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg></div>
+            <h3>Recherche dans la vidéo</h3>
+            <p>Tapez un mot : VDL trouve où il est prononcé. Gardez plusieurs passages ou chapitres, réunis en une seule vidéo.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></div>
+            <h3>Super Send</h3>
+            <p>Partagez vidéos et fichiers entre téléphones et PC qui ont VDL, à une ou plusieurs personnes. Ultra rapide, sans Internet.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></div>
+            <h3>Abonnements et playlists</h3>
+            <p>Suivez une chaîne : ses nouvelles vidéos se téléchargent toutes seules. Pause, reprise, file d'attente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifs">
+      <div class="wrap">
+        <h2>Tarifs</h2>
+        <p class="sub">Gratuit pour commencer. Passez à Pro ou Premium quand vous voulez, la clé arrive par e-mail.</p>
+        <div class="pay-toggle" role="tablist">
+          <button class="on" data-pay="card" role="tab">Carte ou PayPal (USD)</button>
+          <button data-pay="mm" role="tab">Mobile Money (FCFA)</button>
+        </div>
+        <div class="plans">
+          <div class="plan">
+            <h3>VDL Pro <small>Windows</small></h3>
+            <ul><li>Téléchargements illimités</li><li>Jusqu'en 4K</li><li>Playlists, abonnements, extraits multiples</li><li>Outils WhatsApp, GIF, sonnerie</li><li>Sans publicité</li></ul>
+            <div class="price-row" data-plan="windows_1y" data-usd="9,99 $" data-xof="3 500 FCFA">
+              <span class="dur">1 an</span><span class="amount"></span>
+              <a class="btn small buy" href="#">Acheter</a>
+            </div>
+            <div class="price-row" data-plan="windows_life" data-usd="19,99 $" data-xof="7 500 FCFA">
+              <span class="dur">À vie</span><span class="amount"></span>
+              <a class="btn small buy" href="#">Acheter</a>
+            </div>
+          </div>
+          <div class="plan featured">
+            <span class="tag-best">Le plus avantageux</span>
+            <h3>VDL Premium <small>Windows + Android</small></h3>
+            <ul><li>Tout VDL Pro sur Windows</li><li>Android sans publicité, en 4K</li><li>Une seule clé pour le PC et le téléphone</li><li>Jusqu'à 3 appareils</li></ul>
+            <div class="price-row" data-plan="premium_1y" data-usd="12,99 $" data-xof="5 000 FCFA">
+              <span class="dur">1 an</span><span class="amount"></span>
+              <a class="btn small buy" href="#">Acheter</a>
+            </div>
+            <div class="price-row" data-plan="premium_life" data-usd="24,99 $" data-xof="10 000 FCFA">
+              <span class="dur">À vie</span><span class="amount"></span>
+              <a class="btn small buy" href="#">Acheter</a>
+            </div>
+          </div>
+          <div class="plan">
+            <h3>Sans pubs <small>Android</small></h3>
+            <ul><li>Aucune publicité</li><li>Jusqu'en 4K</li><li>Extraits multiples, chapitres</li><li>Abonnements, outils WhatsApp</li></ul>
+            <div class="price-row mm-only" data-plan="android_1m" data-xof="300 FCFA">
+              <span class="dur">1 mois</span><span class="amount"></span>
+              <a class="btn small buy" href="#">Acheter</a>
+            </div>
+            <div class="price-row" data-plan="android_1y" data-usd="4,99 $" data-xof="2 000 FCFA">
+              <span class="dur">1 an</span><span class="amount"></span>
+              <a class="btn small buy" href="#">Acheter</a>
+            </div>
+            <div class="price-row" data-plan="android_life" data-usd="9,99 $" data-xof="4 000 FCFA">
+              <span class="dur">À vie</span><span class="amount"></span>
+              <a class="btn small buy" href="#">Acheter</a>
+            </div>
+          </div>
+        </div>
+        <p class="free-note"><b>Version gratuite</b> — Windows : 3 vidéos par jour en 720p. Android : téléchargements illimités, avec publicités.</p>
+        <p class="free-note">Paiement sécurisé par Lemon Squeezy (carte, PayPal) ou PayDunya (Mobile Money, cartes). La clé s'active dans VDL : <i>Réglages &gt; Licence</i> sur Windows, <i>Accueil &gt; VDL Premium</i> sur Android.</p>
+      </div>
+    </section>
+
+    <section id="installation">
+      <div class="wrap">
+        <h2>Installation</h2>
+        <p class="sub">VDL n'est pas distribué par les stores : votre appareil affichera un avertissement la première fois. C'est normal.</p>
+        <div class="guides">
+          <div class="guide">
+            <h3>Windows</h3>
+            <ol>
+              <li>Ouvrez <span class="ui">VDL-Setup.exe</span>.</li>
+              <li>Si l'écran bleu « Windows a protégé votre ordinateur » apparaît, cliquez sur <span class="ui">Informations complémentaires</span> puis <span class="ui">Exécuter quand même</span>.</li>
+              <li>Suivez l'installation. VDL s'ouvre à la fin.</li>
+            </ol>
+            <p class="note">Cet écran apparaît pour tout logiciel récent non signé par un certificat payant.</p>
+          </div>
+          <div class="guide">
+            <h3>Android</h3>
+            <ol>
+              <li>Téléchargez <span class="ui">VDL.apk</span> depuis votre téléphone.</li>
+              <li>Ouvrez le fichier. Si Android le demande, autorisez votre navigateur à <span class="ui">installer des applis inconnues</span>.</li>
+              <li>Appuyez sur <span class="ui">Installer</span>.</li>
+            </ol>
+            <p class="note">Ensuite : ouvrez un site dans l'onglet <span class="ui">Navigateur</span> de VDL, ou depuis une autre appli : <span class="ui">Partager</span> → <span class="ui">VDL</span>.</p>
+          </div>
+          <div class="guide">
+            <h3>Extension navigateur</h3>
+            <ol>
+              <li>Ouvrez <span class="ui">chrome://extensions</span> (ou edge://, brave://).</li>
+              <li>Activez le <span class="ui">Mode développeur</span> en haut à droite.</li>
+              <li><span class="ui">Charger l'extension non empaquetée</span> → choisissez le dossier <span class="ui">extension</span> de VDL (raccourci dans le menu Démarrer).</li>
+            </ol>
+            <p class="note">VDL doit être ouvert (icône près de l'horloge) pour recevoir les liens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nouveautes">
+      <div class="wrap">
+        <h2>Nouveautés</h2>
+        <p class="sub">Les applications installées vous préviennent automatiquement quand une nouvelle version sort.</p>
+        <div class="changelog">
+          <article class="release">
+            <div class="release-head"><span class="tag">0.16.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Super Send : partage ultra rapide, sans Internet</h3>
+            <ul>
+              <li>Envoyez vidéos, photos, musique, documents et dossiers entiers entre téléphones et PC qui ont VDL</li>
+              <li>Même Wi-Fi : les appareils se trouvent tout seuls ; sans Wi-Fi : un téléphone crée un réseau, l&#x27;autre scanne le QR code</li>
+              <li>Accepter ou refuser chaque envoi, reprise automatique si la connexion coupe</li>
+              <li>Envoi à plusieurs appareils en même temps (chacun accepte pour lui, 3 envois à la fois)</li>
+              <li>« Partager VDL » : un ami installe VDL depuis votre téléphone, sans Internet</li>
+              <li>Gratuit, sur Windows et Android</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.15.1</span><span class="date">Octobre 2026</span></div>
+            <h3>Comptage des utilisateurs</h3>
+            <ul>
+              <li>Signal anonyme une fois par jour pour compter les utilisateurs actifs (aucun nom, aucun historique)</li>
+              <li>Tableau de bord d&#x27;administration : utilisateurs, licences, ventes</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.15.0</span><span class="date">Octobre 2026</span></div>
+            <h3>VDL Pro et VDL Premium</h3>
+            <ul>
+              <li>Windows : version gratuite (3 vidéos par jour, 720p) et VDL Pro sans limite, dès 9,99 $ par an ou 19,99 $ à vie</li>
+              <li>Android : gratuit avec publicités, ou sans publicité avec la 4K et tous les outils dès 300 FCFA par mois</li>
+              <li>Paiement par carte, PayPal ou Mobile Money ; la clé arrive par e-mail et s&#x27;active dans l&#x27;application</li>
+              <li>Une seule clé Premium pour le PC et le téléphone</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.14.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Plusieurs extraits ou chapitres en une seule vidéo</h3>
+            <ul>
+              <li>Choisissez plusieurs passages d&#x27;une même vidéo (« Ajouter un autre extrait ») : VDL les assemble en une seule vidéo, dans l&#x27;ordre</li>
+              <li>Pareil pour les chapitres : cochez-en plusieurs, vous obtenez une seule vidéo</li>
+              <li>Ou, au choix, un fichier par extrait ou par chapitre</li>
+              <li>Extraits audio (MP3) coupés à la seconde près</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.13.1</span><span class="date">Octobre 2026</span></div>
+            <h3>Version visible et mise à jour à la demande</h3>
+            <ul>
+              <li>Les réglages affichent la version installée de VDL, de l&#x27;extension et du moteur de téléchargement</li>
+              <li>Bouton « Rechercher une mise à jour » : VDL vérifie tout de suite et se met à jour en un clic</li>
+              <li>Android : la version installée est indiquée en bas de l&#x27;accueil</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.13.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Aperçu de l&#x27;extrait et mises à jour automatiques de l&#x27;extension</h3>
+            <ul>
+              <li>Avant de télécharger un extrait, le bouton « Aperçu » le lit : vous voyez exactement le passage choisi</li>
+              <li>Un extrait en cours de téléchargement se regarde aussi directement</li>
+              <li>L&#x27;extension du navigateur se met à jour en même temps que VDL et se recharge toute seule</li>
+              <li>VDL vérifie les nouvelles versions toutes les 12 heures, même s&#x27;il reste ouvert plusieurs jours</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.12.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Regarder pendant le téléchargement</h3>
+            <ul>
+              <li>« Regarder maintenant » lit la vidéo en ligne tout de suite, sans attendre la fin du téléchargement</li>
+              <li>Disponible dans la fenêtre de téléchargement et sur chaque téléchargement en cours</li>
+              <li>Android : lecture avec avance rapide ; Windows : lecture continue dans le lecteur intégré</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.11.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Bibliothèque hors ligne</h3>
+            <ul>
+              <li>Lecteur intégré qui reprend la lecture là où vous vous étiez arrêté.</li>
+              <li>Bibliothèque : recherche, tri par créateur ou par site, vidéos et musique, progression du visionnage.</li>
+              <li>Android : nouvel onglet Bibliothèque. Windows : recherche, colonne Créateur et catégorie « Par créateur ».</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.10.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Du PC au téléphone</h3>
+            <ul>
+              <li>Associez votre téléphone en visant un QR code affiché par VDL sur le PC (même Wi-Fi).</li>
+              <li>Clic droit sur un téléchargement du PC → « Envoyer au téléphone » : la vidéo arrive dans Téléchargements/VDL du téléphone.</li>
+              <li>Sur le téléphone, « Télécharger sur le PC » envoie le lien au PC, qui fait le téléchargement.</li>
+              <li>Connexion désactivée par défaut et protégée par un code secret.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.9.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Rechercher dans la vidéo</h3>
+            <ul>
+              <li>Tapez un mot ou une expression : VDL trouve les moments où il est prononcé, à la seconde près.</li>
+              <li>Touchez un résultat : l&#x27;extrait est réglé autour du passage, et seul ce passage est téléchargé.</li>
+              <li>Fonctionne avec les sous-titres de la vidéo, y compris les sous-titres automatiques (la grande majorité des vidéos YouTube).</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.8.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Abonnements</h3>
+            <ul>
+              <li>Abonnez-vous à une chaîne ou une playlist : ses nouvelles vidéos se téléchargent automatiquement (vidéo ou MP3).</li>
+              <li>Possibilité de récupérer aussi les dernières vidéos déjà publiées.</li>
+              <li>Android : vérification toutes les 6 h même application fermée, en Wi-Fi seulement et/ou pendant la charge si vous le souhaitez.</li>
+              <li>Windows : vérification automatique tant que VDL est ouvert, fenêtre Abonnements et case « S&#x27;abonner » sur les playlists.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.7.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Prêt pour WhatsApp et les réseaux</h3>
+            <ul>
+              <li>Transformer une vidéo téléchargée : compresser sous 16 Mo (WhatsApp), 25 Mo (Discord, e-mail) ou une autre taille.</li>
+              <li>Découper en morceaux de 30, 60 ou 90 s pour les statuts.</li>
+              <li>Créer un GIF animé ou une sonnerie (ajoutée directement aux sonneries du téléphone sur Android).</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.6.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Chapitres</h3>
+            <ul>
+              <li>Les vidéos découpées en chapitres affichent leur liste : cochez ceux qui vous intéressent.</li>
+              <li>Chaque chapitre coché devient un fichier séparé, et seuls ces passages sont téléchargés (tout cocher = découper la vidéo par chapitre).</li>
+              <li>Noms de fichiers adaptés pour ne jamais dépasser la limite de longueur de Windows.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.5.1</span><span class="date">Octobre 2026</span></div>
+            <h3>Navigateur Android : retour, menu et historique</h3>
+            <ul>
+              <li>Flèche retour toujours disponible, menu avec page suivante, accueil, partage et ouverture dans un autre navigateur.</li>
+              <li>Historique des pages visitées, avec recherche et suppression ; sites récents sur l'accueil du navigateur.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.5.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Télécharger seulement un extrait</h3>
+            <ul>
+              <li>Choisissez un début et une fin (par exemple 12:30 → 14:30) : seule cette partie est téléchargée, pas la vidéo entière.</li>
+              <li>Android : curseur à deux poignées et saisie des horaires. Windows : champs début et fin.</li>
+              <li>Coupe rapide par défaut, ou coupe précise à la seconde.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.4.1</span><span class="date">Octobre 2026</span></div>
+            <h3>Telegram Web</h3>
+            <ul>
+              <li>Les vidéos lues dans Telegram Web ne sont plus proposées par erreur : VDL explique comment les enregistrer avec le bouton de Telegram.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.4.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Bulle flottante, statuts WhatsApp et Telegram</h3>
+            <ul>
+              <li>Android : une bulle VDL au-dessus de vos applis (Facebook, TikTok, Instagram, Telegram…) : copiez le lien, touchez la bulle, téléchargez sans quitter l'app.</li>
+              <li>Windows : bulle toujours visible ; cliquez après avoir copié un lien, ou glissez-y un lien.</li>
+              <li>Statuts WhatsApp et WhatsApp Business : enregistrez les vidéos et photos que vous avez regardées.</li>
+              <li>Telegram, WhatsApp… : Partager → VDL enregistre la vidéo, la photo ou le son dans Téléchargements/VDL.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.3.2</span><span class="date">Octobre 2026</span></div>
+            <h3>Navigateur plus simple à utiliser</h3>
+            <ul>
+              <li>Grand champ « Rechercher ou saisir une adresse » sur la page d'accueil du navigateur.</li>
+              <li>Barre d'adresse plus visible.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.3.1</span><span class="date">Octobre 2026</span></div>
+            <h3>Mise à jour en un clic</h3>
+            <ul>
+              <li>Le bouton « Mettre à jour » télécharge et installe directement la nouvelle version, sur Android comme sur Windows.</li>
+              <li>Chaque mise à jour est vérifiée (empreinte SHA-256) avant d'être installée.</li>
+              <li>Sous Windows, VDL se relance tout seul après la mise à jour.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.3.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Navigation protégée sur Android</h3>
+            <ul>
+              <li>Blocage des publicités, du pistage et de plus de 70 000 domaines malveillants.</li>
+              <li>Pop-ups et redirections automatiques vers d'autres sites bloquées.</li>
+              <li>Alerte avant les sites d'hameçonnage et de logiciels malveillants (navigation sécurisée Google).</li>
+              <li>Bouclier dans la barre d'adresse, désactivable site par site.</li>
+              <li>Les fichiers proposés par les sites se téléchargent dans VDL.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.2.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Navigateur intégré et nouvelle interface Android</h3>
+            <ul>
+              <li>Navigateur intégré : le bouton « Télécharger cette vidéo » apparaît pendant la lecture.</li>
+              <li>Nouvelle interface : Accueil, Navigateur, Téléchargements, mode sombre.</li>
+              <li>Choix du format et de la qualité dans une fiche claire, vitesse et temps restant affichés.</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head"><span class="tag">0.1.0</span><span class="date">Octobre 2026</span></div>
+            <h3>Première version</h3>
+            <ul>
+              <li>Windows : installeur, extension navigateur, téléchargements accélérés multi-connexions.</li>
+              <li>Android : collez un lien ou partagez-le vers VDL.</li>
+              <li>Vidéo jusqu'en 4K, MP3, sous-titres, playlists, mises à jour automatiques.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <h2>Questions fréquentes</h2>
+        <p class="sub">&nbsp;</p>
+        <details>
+          <summary>VDL est-il gratuit ?</summary>
+          <p>VDL est gratuit pour commencer, sans compte. Sur Windows, la version gratuite permet 3 vidéos par jour en 720p ; VDL Pro (9,99 $ par an ou 19,99 $ à vie) lève toutes les limites. Sur Android, les téléchargements sont illimités avec des publicités ; l'offre « Sans pubs » les retire et débloque la 4K et les outils avancés. <a href="#tarifs">Voir les tarifs</a>.</p>
+        </details>
+        <details>
+          <summary>Pourquoi Windows ou mon antivirus affichent-ils un avertissement ?</summary>
+          <p>Les logiciels récents distribués hors des stores et sans certificat payant déclenchent cet avertissement, quel que soit leur contenu. VDL est construit automatiquement à partir de son code source public.</p>
+        </details>
+        <details>
+          <summary>Quels sites sont compatibles ?</summary>
+          <p>Plus de 1 800 sites de vidéo et de musique, ainsi que les liens directs vers des fichiers. L'extension (ordinateur) et le navigateur intégré (Android) détectent aussi les vidéos lues sur la plupart des autres sites.</p>
+        </details>
+        <details>
+          <summary>Comment fonctionne Super Send ?</summary>
+          <p>Super Send envoie vos fichiers directement d'un appareil à l'autre, sans passer par Internet : aucune donnée mobile utilisée. Sur le même Wi-Fi, ouvrez Super Send sur les deux appareils, ils se trouvent tout seuls. Sans Wi-Fi, un téléphone touche « Créer un réseau » et l'autre scanne le QR code. Le PC peut aussi rejoindre le réseau d'un téléphone. Pour un ami qui n'a pas VDL, « Partager VDL » lui permet de l'installer depuis votre téléphone. Super Send est gratuit.</p>
+        </details>
+        <details>
+          <summary>Comment se passent les mises à jour ?</summary>
+          <p>Sous Windows, VDL vérifie au lancement, puis toutes les 12 heures, si une nouvelle version existe : un bouton « Mettre à jour » apparaît en bas de la fenêtre et une notification s'affiche : un clic télécharge la mise à jour, la vérifie, l'installe et relance VDL. Les téléchargements en cours reprennent ensuite. L'extension du navigateur est mise à jour en même temps et se recharge d'elle-même. Sur Android, la vérification a lieu à chaque ouverture de l'application ; le bouton « Mettre à jour » installe la nouvelle version. Le moteur de téléchargement se met aussi à jour tout seul, pour suivre les changements des sites.</p>
+        </details>
+        <details>
+          <summary>Pourquoi certaines vidéos ne se téléchargent pas ?</summary>
+          <p>Les contenus protégés contre la copie (DRM), comme ceux des plateformes de streaming par abonnement, ne sont pas pris en charge. Une vidéo privée peut nécessiter d'activer « Cookies du navigateur » dans les réglages.</p>
+        </details>
+        <details>
+          <summary>VDL peut-il détecter tout seul les vidéos dans Facebook, WhatsApp ou Telegram ?</summary>
+          <p>Non : Android isole chaque application, aucune app ne peut voir les vidéos d'une autre. VDL propose donc la bulle flottante (copiez le lien, touchez la bulle), l'enregistrement des statuts WhatsApp et le partage vers VDL. Les vidéos de discussions privées Telegram s'enregistrent avec « Partager → VDL ».</p>
+        </details>
+        <details>
+          <summary>Le navigateur intégré de l'application Android est-il sûr ?</summary>
+          <p>Il bloque les publicités, les traqueurs et plus de 70 000 domaines publicitaires ou malveillants (liste mise à jour chaque semaine), ainsi que les pop-ups et les redirections automatiques vers d'autres sites. La navigation sécurisée de Google vous avertit avant d'ouvrir un site d'hameçonnage ou de logiciel malveillant. Le bouclier dans la barre d'adresse montre ce qui a été bloqué sur la page.</p>
+        </details>
+        <details>
+          <summary>Et sur iPhone ou Mac ?</summary>
+          <p>La version Mac est prévue. Sur iPhone, Apple n'autorise pas l'installation d'applications en dehors de l'App Store.</p>
+        </details>
+        <details>
+          <summary>Puis-je télécharger n'importe quoi ?</summary>
+          <p>VDL est un outil. Vous êtes responsable de son usage : téléchargez uniquement des contenus dont vous avez le droit de faire une copie (vos propres vidéos, contenus libres de droits, usage autorisé par l'auteur ou par la loi). Voir les <a href="conditions.html">conditions d'utilisation</a>.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>VDL · <span id="version-footer"></span></span>
+      <span>
+        <a href="conditions.html">Conditions d'utilisation</a> ·
+        <a id="contact-link" href="#">Signaler un problème</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
