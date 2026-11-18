@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.vdl",
+      "sha256_cert_fingerprints": ["95:73:C3:95:F3:C7:99:BD:61:8C:08:C8:BE:84:F9:F3:40:FD:B2:D4:45:04:8C:D4:FF:E7:EB:2E:8C:7D:45:17"]
+    }
+  }
+]

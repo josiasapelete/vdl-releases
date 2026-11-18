@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Votre clé VDL</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .keybox { max-width: 520px; margin: 48px auto; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+    .keybox h1 { font-size: 22px; margin: 0 0 8px; }
+    .keybox p { color: var(--muted); }
+    #key { font: 600 clamp(15px, 4.4vw, 20px)/1.4 ui-monospace, Consolas, monospace; letter-spacing: .5px; white-space: nowrap;
+      overflow-x: auto; background: var(--bg); border: 1px dashed var(--accent); border-radius: 10px; padding: 14px;
+      text-align: center; user-select: all; }
+    #copy { width: 100%; margin-top: 14px; border: 0; cursor: pointer; justify-content: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/icon.png" alt="">VDL</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="keybox">
+      <h1>Votre clé VDL</h1>
+      <div id="key">—</div>
+      <button type="button" id="copy" class="btn">Copier la clé</button>
+      <p>Dans VDL : <b>Réglages &gt; Licence &gt; Activer une clé</b> (Windows) ou <b>Accueil &gt; VDL Premium</b> (Android),
+        puis collez la clé.</p>
+      <p id="missing" hidden>Aucune clé dans ce lien. Ouvrez le bouton « Copier la clé » de l'e-mail reçu après votre achat.</p>
+    </div>
+  </main>
+
+  <script>
+    // La clé est après le « # » de l'adresse : le navigateur ne l'envoie à aucun serveur
+    const key = decodeURIComponent(location.hash.slice(1)).trim().toUpperCase();
+    const box = document.getElementById("key");
+    const btn = document.getElementById("copy");
+    if (/^[A-Z0-9-]{8,64}$/.test(key)) {
+      box.textContent = key;
+    } else {
+      btn.hidden = true;
+      document.getElementById("missing").hidden = false;
+    }
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(box.textContent);
+      } catch {
+        const r = document.createRange(); r.selectNodeContents(box);
+        const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); document.execCommand("copy");
+      }
+      btn.textContent = "Clé copiée ✓";
+      setTimeout(() => (btn.textContent = "Copier la clé"), 2500);
+    });
+  </script>
+</body>
+</html>
